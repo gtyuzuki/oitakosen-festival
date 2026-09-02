@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>案内 | 大分高専祭 -爆裂-</title>
+<meta name="description" content="第61回 大分高専祭の来場案内。校内MAP・交通手段・パンフレット。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <!-- ロゴ画像を使う場合はここに <a href="index.html" class="brand"><img src="logo.png" alt="大分高専祭"></a> を追加 -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">ホーム</a></li>
+      <li class="has-dropdown">
+        <button type="button" class="nav-parent">企画<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="dropdown-wrap">
+          <ul class="dropdown">
+            <li><a href="events.html">企画一覧</a></li>
+            <li><a href="timetable.html">タイムテーブル</a></li>
+            <li><a href="exhibitions.html">展示</a></li>
+            <li><a href="shops.html">模擬店</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="has-dropdown">
+        <button type="button" class="nav-parent">案内<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="dropdown-wrap">
+          <ul class="dropdown">
+            <li><a href="guide.html#map">校内MAP</a></li>
+            <li><a href="guide.html#access">交通手段</a></li>
+            <li><a href="guide.html#pamphlet">パンフレット</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="sponsor.html">協賛</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="section-label">Guide</span>
+    <h1>案内</h1>
+    <p>校内MAP・交通手段・パンフレットをまとめています。</p>
+  </div>
+</header>
+
+<section id="map">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">Campus Map</span>
+      <h2>校内MAP</h2>
+      <p>模擬店・展示の場所はこちらでご確認ください。</p>
+    </div>
+    <div class="map-frame" id="mapFrame">
+      <img src="campus-map.jpg" alt="校内MAP"
+           onerror="document.getElementById('mapFrame').classList.add('img-missing')">
+    </div>
+  </div>
+</section>
+
+<section id="access">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">Access</span>
+      <h2>交通手段</h2>
+    </div>
+    <div class="access-info">
+      <p>会場に駐車場はございません。自家用車での来場は禁止です。近隣施設・道路への駐車もおやめください。<br>公共交通機関（電車・バス）をご利用のうえご来場ください。詳しいアクセス方法は決まり次第こちらに追記します。</p>
+    </div>
+  </div>
+</section>
+
+<section id="pamphlet">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">Pamphlet</span>
+      <h2>パンフレット</h2>
+      <p>会場全体の案内はこちらのPDFをご覧ください。</p>
+    </div>
+    <div class="pdf-frame" id="pdfFrame"></div>
+    <div class="pdf-actions" id="pdfActions">
+      <a href="pamphlet.pdf" class="btn-outline" target="_blank" rel="noopener">
+        新しいタブで開く
+      </a>
+      <a href="pamphlet.pdf" class="btn-outline" download>
+        ダウンロード
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h5>Oita Kosensai</h5>
+        <p style="color:var(--text-muted); font-size:.88rem; max-width:280px;">第61回大分高専祭 公式サイト。テーマ「爆裂」。</p>
+      </div>
+      <div>
+        <h5>Guide</h5>
+        <a href="index.html">ホーム</a>
+        <a href="events.html">企画一覧</a>
+        <a href="timetable.html">タイムテーブル</a>
+        <a href="exhibitions.html">展示</a>
+        <a href="shops.html">模擬店</a>
+      </div>
+      <div>
+        <h5>案内</h5>
+        <a href="guide.html#map">校内MAP</a>
+        <a href="guide.html#access">交通手段</a>
+        <a href="guide.html#pamphlet">パンフレット</a>
+      </div>
+      <div>
+        <h5>Links</h5>
+        <a href="sponsor.html">協賛</a>
+        <a href="#">X（旧Twitter）</a>
+        <a href="#">Instagram</a>
+        <a href="#">お問い合わせ</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="mono" title="開催年を入れてください">20XX</span> 大分高専 高専祭実行委員会</span>
+      <span class="mono">ALL RIGHTS RESERVED</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="script.js"></script>
+<script src="guide.js"></script>
+
+</body>
+</html>
