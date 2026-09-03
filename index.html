@@ -99,7 +99,7 @@
       <button class="tab-btn" data-filter="event">企画</button>
     </div>
 
-    <div class="card-grid" id="cardGrid">
+    <div class="carousel-track" id="cardGrid">
       <div class="item-card" data-cat="shop">
         <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l1-5h16l1 5M4 9v10a1 1 0 001 1h14a1 1 0 001-1V9M4 9h16M9 13a3 3 0 006 0"/></svg>
         <span class="item-cat mono">SHOP</span>
@@ -148,6 +148,19 @@
         <h4>パフォーマンス大会</h4>
         <span class="club">高専祭実行委員会</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="sponsor-pickup">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">Sponsors</span>
+      <h2>協賛企業ピックアップ</h2>
+      <p>大分高専祭は、多くの企業・団体様にご協賛いただいています。</p>
+    </div>
+    <div class="carousel-track" id="sponsorCarouselTrack">
+      <p class="list-status">読み込み中…</p>
     </div>
   </div>
 </section>
@@ -212,7 +225,9 @@
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script src="script.js"></script>
+<script src="pickup.js"></script>
 
 </body>
 </html>
